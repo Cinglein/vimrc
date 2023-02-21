@@ -11,10 +11,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'valloric/youcompleteme'
-
-Plugin 'dmerejkowsky/vim-ale'
+Plugin 'dense-analysis/ale'
+"Plugin 'valloric/youcompleteme'
 
 Plugin 'ap/vim-css-color'
 Plugin 'vim-airline/vim-airline'
@@ -60,15 +58,7 @@ filetype plugin indent on    " required
 let g:seoul256_background = 233
 colo seoul256
 
-let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.8.0/src'
+"let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.8.0/src'
 let g:rustfmt_autosave = 1
 
-" syntastic
-let g:syntastic_error_symbol = 'EE'
-let g:syntastic_style_error_symbol = 'E>'
-let g:syntastic_warning_symbol = 'WW'
-let g:syntastic_style_warning_symbol = 'W>'
-" let g:syntastic_rust_rustc_exe = 'cargo check'
-let g:syntastic_rust_rustc_fname = ''
-let g:syntastic_rust_rustc_args = '--'
-let g:syntastic_rust_checkers = ['rustc']
+
