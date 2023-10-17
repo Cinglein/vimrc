@@ -61,4 +61,13 @@ colo seoul256
 "let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.8.0/src'
 let g:rustfmt_autosave = 1
 
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap < <><Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
 
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType wgsl setlocal shiftwidth=4 tabstop=4
